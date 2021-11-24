@@ -1,7 +1,9 @@
 import Food from './ital-bg.jpg';
 import './style.css';
 
-export default function loadPage() {
+export default function home() {
+    const homeContainer = document.createElement('div');
+    homeContainer.classList.add('container-border');
 
     const header = document.createElement('h1');
     header.textContent = 'Vital Ital';
@@ -12,5 +14,7 @@ export default function loadPage() {
     const myFood = new Image();
     myFood.src = Food;
 
-    return { header, headline, myFood };
+    homeContainer.append(header, headline, myFood);
+
+    return homeContainer;
 }

@@ -2,7 +2,6 @@ import './style.css';
 
 export default function contact() {
     const contactContainer = document.createElement('div');
-    contactContainer.classList.add('container-border');
 
     const headChef = document.createElement('div');
     const headTitle = document.createElement('h3');

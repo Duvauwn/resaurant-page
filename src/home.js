@@ -3,7 +3,6 @@ import './style.css';
 
 export default function home() {
     const homeContainer = document.createElement('div');
-    homeContainer.classList.add('container-border');
 
     const header = document.createElement('h1');
     header.textContent = 'Vital Ital';
@@ -13,6 +12,8 @@ export default function home() {
 
     const myFood = new Image();
     myFood.src = Food;
+    myFood.style.height = 'auto';
+    myFood.style.width = '70%';
 
     homeContainer.append(header, headline, myFood);
 

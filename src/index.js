@@ -17,14 +17,17 @@ const tabButtons = (() => {
 
     const homeTab = document.createElement('button');
     homeTab.id = 'home';
+    homeTab.classList.add('tab');
     homeTab.textContent = 'Home';
 
     const menuTab = document.createElement('button');
     menuTab.id = 'menu';
+    menuTab.classList.add('tab');
     menuTab.textContent = 'Menu';
 
     const contactTab = document.createElement('button');
     contactTab.id = 'contact';
+    contactTab.classList.add('tab');
     contactTab.textContent = 'Contact';
 
     tabsContainer.append(homeTab, menuTab, contactTab);

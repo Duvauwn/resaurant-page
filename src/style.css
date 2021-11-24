@@ -3,6 +3,8 @@ body, html {
 }
 *{
     box-sizing: border-box;
+    font-family: monospace;
+    font-style: italic;
 }
 #bg-image {
     background-image: url('./bg.jpg');
@@ -42,4 +44,9 @@ body, html {
     width: 80%;
     padding:20px;
     text-align: center;
+}
+.tab {
+    background-color: transparent;
+    border:1px solid green;
+    color:white;
 }
